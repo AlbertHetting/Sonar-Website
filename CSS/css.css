@@ -1,0 +1,187 @@
+:root{
+  --mainrod: #4e0907;
+  --maingraa: #1d1e1d;
+  --maingul: #f8bc16;
+  --srod: #6f0d0a;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: black;
+}
+
+
+h1
+h2
+h3
+{
+font-family: "Mukta Mahee", serif; 
+color: white;
+}
+
+
+.logo{
+  position: absolute; /* Sørg for at det forbliver synligt */
+  top: -40px;
+  margin-left: -49.2%;
+  z-index: 1000; /* for at gøre logoet interaktivt */
+}
+
+
+.Mainimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;  /* Centers the image */
+  max-height: 80vh;
+  width: 100%;
+  overflow: hidden;               /* Ensures it fills the width */
+}
+
+
+
+
+/*Navbar Styling*/
+header {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  padding: 0px 1.5%;
+  display: flex;
+  justify-content: right;
+  z-index: 500;
+}
+
+
+
+.ImgFront{
+  height: auto;
+  min-width: 100vw;
+}
+
+header .checkbox {
+  font-weight: bolder;
+  font-size: 25px;
+  color: #333;
+}
+
+header a{
+  font-family: "Mukta Mahee", serif;
+  font-weight: 400;
+  font-style: light;
+
+}
+
+header .navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 70px;
+}
+
+header .navigation ul li {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0; 
+}
+
+header .navigation ul li a {
+  text-decoration: none;
+  font-size: 27px;
+  color: white;
+  display: inline-flex; 
+  align-items: center;
+  position: relative;
+}
+
+header .navigation ul li ul li a {
+  text-decoration: none;
+  font-size: medium;
+  
+}
+
+header .navigation ul li ul {
+  position: absolute;
+  width: 160px;
+  background: var(--navcol);
+  display: none;
+}
+
+header .navigation ul li:focus-within > ul,
+header .navigation ul li:hover > ul {
+    display: block;
+}
+
+header label {
+    font-size: 25px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 1000;
+    cursor: pointer;
+    display: none;
+}
+
+#box {
+    display: none;
+}
+
+
+
+.navigation ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.5px;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+
+.navigation ul li a:hover::after{
+  transform: scaleX(1);
+  
+}
+
+
+main{
+font-family:"Mukta Mahee", serif;
+margin-top: 2%;
+background-color: black;
+}
+
+main h1, h2, h3, p, a{
+  color: white;
+}
+
+.content1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+main .radarimg{
+  max-width: 40%;
+}
+
+.content1text{
+  max-width: 400px;
+}
+
+.content1text h1{
+  font-size: 40px;
+}
+.content1text p{
+  font-size: 18px;
+}
