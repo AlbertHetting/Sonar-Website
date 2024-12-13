@@ -284,22 +284,42 @@ main .box2{
 
 /* footer styling */
 
-.footerimg {
-  margin-top: 5%;
-  margin-bottom: .50px;
+footer{
+  margin-top: 7%;
+  height: 180px;
+}
+
+footer h1, h2, p, a{
+  font-family:"Mukta Mahee", serif; 
+  color: white;
+}
+
+footer #contact{
+z-index: 500;
+margin-bottom: -50px;
+}
+
+footer{
+  background-image: url("../Images/footer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.footercontent{
+  margin-right: 2%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-position: center;  /* Centers the image */
-  max-height: 12vh;
-  width: 100vw;
-  overflow: hidden;               /* Ensures it fills the width */
+  justify-content: end;
+  align-items: baseline;
+  gap: 150px;
 }
 
 
+
+
+
 /* Tablet (Ipad Air) Breakpoint*/
-@media(max-width:1400px){
+@media (max-width:1400px){
   
   .logo{
     z-index: 2;
@@ -430,6 +450,20 @@ main .content2 p{
   width: 80%;
   height: auto;
 }
+
+.footercontent{
+  margin-right: 1%;
+  gap: 50px;
+}
+
+.footercontent h1{
+  font-size: 20px;
+}
+
+.footercontent p, a{
+  font-size: 13px;
+}
+
 
 }
 
@@ -566,6 +600,10 @@ main .content2 p{
   align-self: center;
 } 
 
+.content3 p{
+  text-align: start;
+}
+
 .box3{
   display: flex;
   flex-direction: column;
@@ -576,5 +614,4 @@ main .content2 p{
   width: 90%;
   height: auto;
 }
-
 }
