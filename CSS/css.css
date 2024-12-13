@@ -45,6 +45,10 @@ color: white;
   overflow: hidden;               /* Ensures it fills the width */
 }
 
+.imgfrontph{
+  display: none;
+}
+
 
 
 
@@ -153,6 +157,7 @@ header label {
 
 
 /* Main content på sitet style */
+
 main{
 font-family:"Mukta Mahee", serif;
 margin-top: 2%;
@@ -161,6 +166,14 @@ background-color: black;
 
 main h1, h2, h3, p, a{
   color: white;
+}
+
+main h1{
+  font-size: 40px;
+}
+
+main p{
+  font-size: 18px;
 }
 
 main .maincontent1{
@@ -185,9 +198,7 @@ height: 25%;
   max-width: 400px;
 }
 
-.content1text h1{
-  font-size: 40px;
-}
+
 .content1text p{
   font-size: 18px;
 }
@@ -202,18 +213,15 @@ main #undertext12 {
   max-width: 43%;
   font-size: 18px;
 }
-main #lowertext1{
-  max-width: 100%;
-}
+
+
+/* content 2 styling*/
 
 .box1{
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-
-
 
 main .content2{
   display: flex;
@@ -234,8 +242,11 @@ main .content2 p{
   text-align: end;
 }
 
-main .content2 #Teknikimg{
+main #Teknikimg{
   margin-top: 1%;
+  width: 77%;
+  height: auto;
+  margin-bottom: 1%;
 }
 
 
@@ -243,7 +254,7 @@ main .content2text{
   display: flex;
   flex-direction: column;  
   align-items: flex-end;
-  max-width: 77%;
+  max-width: 79%;
 }
 
 main .box2{
@@ -251,20 +262,319 @@ main .box2{
   justify-content: center;
 }
 
+/* Content 3 Styling */
+.content3{
+  margin-top: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.content3 p{
+  text-align: center;
+}
 
+#eventimg{
+  margin-top: 1%;
+  width: 42%;
+  height: auto;
+}
 
 
 /* footer styling */
 
 .footerimg {
+  margin-top: 5%;
   margin-bottom: .50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-position: center;  /* Centers the image */
-  max-height: 15vh;
+  max-height: 12vh;
   width: 100vw;
   overflow: hidden;               /* Ensures it fills the width */
+}
+
+
+/* Tablet (Ipad Air) Breakpoint*/
+@media(max-width:1400px){
+  
+  .logo{
+    z-index: 2;
+  }
+
+.logoimg{
+  z-index: 1000;
+}
+
+  header {
+      padding: 20px;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      top: -1%;
+      max-width: 100%;
+      z-index: 1;
+      
+  }
+  
+  header label {
+      display: block;
+  }
+
+  header .navigation{
+      position: absolute;
+      top: 50%;
+      display: none;
+  }
+  
+  header .navigation ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+
+  }
+
+  header .navigation ul li {
+      width: 100%;
+  }
+
+  header .navigation ul li ul {
+      position: relative;
+      width: 100%;
+  }
+
+  header .navigation ul li ul li {
+ left: 10%;
+  }
+
+  header .navigation ul li ul li ul {
+      width: 100%;
+  }
+
+  #box:checked ~ .navigation {
+      display: block;
+  }
+
+  .ImgFront {
+    display: flex;
+    justify-content: center;
+    background-position: center;  
+    max-height: 70vh;
+    width: 100%;
+    height: auto;
+    overflow: hidden;               
+  
+  }
+
+.content1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1 h1 {
+  text-align: center;
+}
+
+
+.content1text{
+  max-width: 50%;
+}
+
+main #undertext12 {
+  max-width: 50%;
+  font-size: 18px;
+}
+
+main .radarimg{
+  width: 50%;
+  height: 50%;
+  }
+
+.content2{
+  max-width: 60%;
+  
+}
+
+main .content2text{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  max-width: 90%;
+}
+
+main .content2 p{
+  font-size: 18px;
+  max-width: 85%;
+  text-align: start;
+}
+
+
+.content3{
+  max-width: 50%;
+  align-self: center;
+} 
+
+.box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#eventimg{
+  width: 80%;
+  height: auto;
+}
+
+}
+
+
+/* Tablet (Ipad Air) Breakpoint*/
+@media(max-width: 600px){
+  
+  .logo{
+    z-index: 2;
+    max-width:  50px;
+    height: auto;
+  }
+
+.logoimg{
+  z-index: 1000;
+}
+
+.ImgFront{
+  display: none;
+}
+  header {
+      padding: 20px;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      top: -1%;
+      max-width: 100%;
+      z-index: 1;
+      
+  }
+  
+  header label {
+      display: block;
+  }
+
+  header .navigation{
+      position: absolute;
+      top: 50%;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      margin-top: 5%;
+  }
+  
+  header .navigation ul li a{
+    font-size: 20px;
+  }
+  header .navigation ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0px;
+
+  }
+
+  header .navigation ul li {
+      width: 100%;
+  }
+
+  header .navigation ul li ul {
+      position: relative;
+      width: 100%;
+  }
+
+  header .navigation ul li ul li {
+ left: 10%;
+  }
+
+  header .navigation ul li ul li ul {
+      width: 100%;
+  }
+
+  #box:checked ~ .navigation {
+      display: block;
+  }
+
+  .imgfrontph {
+    display: flex;
+    justify-content: center;
+    background-position: center;  
+    max-height: 100vh;
+    width: 100%;
+    height: auto;
+    overflow: hidden;               
+  
+  }
+
+.content1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content1 h1 {
+  text-align: center;
+}
+
+
+.content1text{
+  max-width: 70%;
+}
+
+main #undertext12 {
+  max-width: 70%;
+  font-size: 18px;
+}
+
+main .radarimg{
+  width: 70%;
+  height: 70%;
+  }
+
+.content2{
+  max-width: 90%;
+  
+}
+
+main .content2text{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  max-width: 90%;
+}
+
+main .content2 p{
+  font-size: 18px;
+  max-width: 85%;
+  text-align: start;
+}
+
+
+.content3{
+  max-width: 70%;
+  align-self: center;
+} 
+
+.box3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#eventimg{
+  width: 90%;
+  height: auto;
+}
+
 }
