@@ -27,7 +27,7 @@ color: white;
 
 
 .logo{
-  position: absolute; /* Sørg for at det forbliver synligt */
+  position: fixed; /* Sørg for at det forbliver synligt */
   top: -40px;
   margin-left: -49.2%;
   z-index: 1000; /* for at gøre logoet interaktivt */
@@ -48,9 +48,10 @@ color: white;
 
 
 
-/*Navbar Styling*/
+/* Navbar Style */
+
 header {
-  position: absolute;
+  position: fixed;
   top: 0%;
   left: 0;
   right: 0;
@@ -59,8 +60,6 @@ header {
   justify-content: right;
   z-index: 500;
 }
-
-
 
 .ImgFront{
   height: auto;
@@ -132,8 +131,6 @@ header label {
     display: none;
 }
 
-
-
 .navigation ul li a::after {
   content: '';
   position: absolute;
@@ -154,6 +151,8 @@ header label {
 }
 
 
+
+/* Main content på sitet style */
 main{
 font-family:"Mukta Mahee", serif;
 margin-top: 2%;
@@ -164,15 +163,22 @@ main h1, h2, h3, p, a{
   color: white;
 }
 
+main .maincontent1{
+  display: flex;
+  flex-direction: column;
+}
+
 .content1{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 30px;
+  align-items: flex-start;
+  gap: 50px;
 }
 
 main .radarimg{
-  max-width: 40%;
+width: 25%;
+height: 25%;
 }
 
 .content1text{
@@ -184,4 +190,81 @@ main .radarimg{
 }
 .content1text p{
   font-size: 18px;
+}
+
+main #Undertext1{
+display: flex;
+justify-content: center;
+margin-top: 2%;
+}
+
+main #undertext12 {
+  max-width: 43%;
+  font-size: 18px;
+}
+main #lowertext1{
+  max-width: 100%;
+}
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+
+
+main .content2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+}
+
+
+main .content2 h1{
+  font-size: 40px;
+}
+
+main .content2 p{
+  font-size: 18px;
+  max-width: 70%;
+  text-align: end;
+}
+
+main .content2 #Teknikimg{
+  margin-top: 1%;
+}
+
+
+main .content2text{
+  display: flex;
+  flex-direction: column;  
+  align-items: flex-end;
+  max-width: 77%;
+}
+
+main .box2{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+/* footer styling */
+
+.footerimg {
+  margin-bottom: .50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-position: center;  /* Centers the image */
+  max-height: 15vh;
+  width: 100vw;
+  overflow: hidden;               /* Ensures it fills the width */
 }
