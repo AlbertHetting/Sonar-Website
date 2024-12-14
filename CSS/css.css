@@ -700,10 +700,66 @@ main .content2 p{
   cursor: pointer;
 }
 
+.post1 label{
+  margin-top: 1%;
+  cursor: pointer;
+}
+
 .commentsection1{
   display: none;
 }
 
 #forumbox:checked ~ .commentsection1 {
+  display: block;
+}
+
+.checkboxforum{
+  pointer-events: none;
+  text-decoration: none;
+}
+
+/*Post 2 style */
+.post2{
+  margin-top: 8%;
+}
+
+#forumbox2 { 
+  display: none;
+}
+
+.post2 label{
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.commentsection2{
+  display: none;
+}
+
+#forumbox2:checked ~ .commentsection2 {
+  display: block;
+}
+
+
+
+/*Post 3 style*/
+.post3{
+  margin-top: 8%;
+}
+
+#forumbox3 { 
+  display: none;
+}
+
+.post3 label{
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.commentsection3{
+  display: none;
+}
+
+#forumbox3:checked ~ .commentsection3 {
   display: block;
 }
