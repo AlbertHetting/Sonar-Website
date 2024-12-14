@@ -135,17 +135,20 @@ header label {
     display: none;
 }
 
+
+/* Animation underlinje */
+
 .navigation ul li a::after {
   content: '';
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -0.5px;
+  bottom: -0px;
   height: 2px;
   background-color: white;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 
@@ -315,7 +318,25 @@ footer{
 }
 
 
+/* sørger for at menu også virker på lavere resolution PC skærme (Bruger selv en 2560x1440 og 3440x1440 derfor kan det se underligt ud på en 1920x1080 skærm */
 
+@media (max-width: 1900px){
+
+  header .navigation ul li a {
+    font-size: 23px;
+   
+  }
+  
+  header .navigation ul li ul li a {
+    font-size: 16px;
+    
+  }
+  
+  header .navigation ul {
+    gap: 50px;
+  }
+
+}
 
 
 /* Tablet (Ipad Air) Breakpoint*/
@@ -614,4 +635,75 @@ main .content2 p{
   width: 90%;
   height: auto;
 }
+}
+
+
+
+
+/*  Styling af Fællesskab  */
+
+.Fbox{
+  margin-top: -3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.igpics{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.forumheader{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Forum Posts */
+.post1{
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post1box{
+  max-width: 40%;
+}
+.forumcontent h2{
+  font-size: 30px;
+}
+
+.forumcontent a{
+  font-size: 20px;
+}
+
+.posttime{
+  font-size: 16px;
+  margin-bottom: -10px;
+}
+
+/* Checkbox trick for at lave en comment section som er collapsable*/
+
+#forumbox { 
+  display: none;
+}
+
+.post1 label{
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.commentsection1{
+  display: none;
+}
+
+#forumbox:checked ~ .commentsection1 {
+  display: block;
 }
