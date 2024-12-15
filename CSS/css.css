@@ -171,11 +171,11 @@ main h1, h2, h3, p, a{
   color: white;
 }
 
-main h1{
+.mainindex h1{
   font-size: 40px;
 }
 
-main p{
+.mainindex p{
   font-size: 18px;
 }
 
@@ -199,11 +199,6 @@ height: 25%;
 
 .content1text{
   max-width: 400px;
-}
-
-
-.content1text p{
-  font-size: 18px;
 }
 
 main #Undertext1{
@@ -336,10 +331,15 @@ footer{
     gap: 50px;
   }
 
+  .imgv{
+  width: auto;
+  max-height: 80%;
+}
+
 }
 
 
-/* Tablet (Ipad Air) Breakpoint*/
+/* Iphone 16-pro Breakpoint */
 @media (max-width:1400px){
   
   .logo{
@@ -429,7 +429,7 @@ footer{
 
 main #undertext12 {
   max-width: 50%;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 main .radarimg{
@@ -450,7 +450,7 @@ main .content2text{
 }
 
 main .content2 p{
-  font-size: 18px;
+  font-size: 22px;
   max-width: 85%;
   text-align: start;
 }
@@ -481,7 +481,7 @@ main .content2 p{
   font-size: 20px;
 }
 
-.footercontent p, a{
+.footercontent p{
   font-size: 13px;
 }
 
@@ -635,6 +635,20 @@ main .content2 p{
   width: 90%;
   height: auto;
 }
+
+.footercontent{
+  margin-right: 1%;
+  gap: 30px;
+}
+
+.footercontent h1{
+  font-size: 15px;
+}
+
+.footercontent p, a{
+  font-size: 9px;
+}
+
 }
 
 
@@ -655,7 +669,11 @@ main .content2 p{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+}
+
+.imgcontainer{
+  display: flex;
+  gap: 3%;
 }
 
 .forumheader{
@@ -762,4 +780,129 @@ main .content2 p{
 
 #forumbox3:checked ~ .commentsection3 {
   display: block;
+}
+
+#showmore{
+  pointer-events: none;
+  cursor: pointer;
+  margin-top: 5%;
+  text-align: center;
+}
+
+/* responsive tablet fællesskab */
+@media (max-width:1400px){
+
+.imgcontainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 30px;
+}
+
+.logo{
+  z-index: 2;
+}
+
+.post1box{
+max-width: 75%;
+}
+}
+
+@media (max-width:1400px){
+  
+  .logo{
+    z-index: 2;
+  }
+
+.post1box{
+  max-width: 75%;
+}
+ 
+
+}
+
+
+/* Vision style */
+
+
+.maincontainerv{
+  display: flex;
+  justify-content: center;
+}
+
+
+.maincontainerv p{
+  font-size: 18px;
+}
+
+.vbox2 h1{
+  font-size: 40px;
+}
+
+.maincontainerv h2{
+  font-size: 25px;
+}
+
+.vbox1{
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  align-items: start;
+}
+
+.vbox2{
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin-bottom: 3%;
+}
+
+.logolower{
+  max-width: 40%;
+  height: auto;
+  margin-bottom: -3%;
+}
+
+
+.imgv{
+  max-width: 60%;
+}
+
+.imgv2{
+  max-width: 100%;
+  height: auto;
+}
+
+.img2box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+@media (max-width:1400px){
+
+.vbox2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.imgv{
+  max-width: 80%;
+}
+
+}
+
+@media(max-width: 600px){
+
+.vbox1{
+  max-width: 70%;
+}
+
+
 }
