@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow /
+
+Sitemap: https://sonar.appixx.dk/sitemap.xml
