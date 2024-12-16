@@ -638,7 +638,7 @@ main .content2 p{
 
 .footercontent{
   margin-right: 1%;
-  gap: 30px;
+  gap: 10px;
 }
 
 .footercontent h1{
@@ -899,13 +899,11 @@ max-width: 75%;
   max-width: 70%;
 }
 
-
 }
 
 
 
 /* Events Style */
-
 
 .eventtitle{
   display: flex;
@@ -920,4 +918,12 @@ max-width: 75%;
 .eventimage1{
   max-width: 100%;
   height: auto;
+}
+
+.omevents{
+  margin-top: 3%;
+}
+
+.omevents h1{
+  text-align: center;
 }
